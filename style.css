@@ -1,0 +1,100 @@
+* 
+{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+body 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header 
+{
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-items: space-between;
+}
+
+.wrapper 
+{  
+    padding: 1rem;
+    width:70%;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    align-content: center;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+aside.collection div.collections, aside.edges div.edges
+{
+    border: 2px solid #ccc;
+    padding: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+aside.collection button 
+{
+    margin-top: .5rem;
+}
+
+.options 
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+    column-gap: .5rem;
+    padding-bottom: 1rem;
+}
+
+.options select 
+{
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+input 
+{
+    width: 100%;
+    padding: 1rem;
+}
+
+input:focus 
+{
+   outline: none;
+}
+
+button
+{
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    margin-bottom: .3rem;
+    
+}
+
+/* Inputs */
+aside.inputs
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+aside.inputs input
+{
+  margin-bottom: .5rem;
+}

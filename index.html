@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphlib-dot/0.6.2/graphlib-dot.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/2.1.2/viz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/2.1.2/full.render.js"></script>
+</head>
+<body>
+ 
+    <header>
+        <div> <h4>Path Finding : Ant Colony Optimization</h4> </div>
+        <div> </div>
+    </header>
+    <section class="wrapper">
+   <main class="form">
+
+    
+  
+    <!--collections-->
+    <aside  class="collection">
+        <div id="collections" class="collections"> A, b, c, d, e, f, g</div>
+        <input id="inputCollection" type="text" placeholder="Enter node">
+        <button id="btnCollection"> Submit node</button>
+
+    </aside>
+ 
+    <!--Edges-->
+    <aside class="edges"> 
+        <div class="edges"> <!--edges goes here--> </div>
+       <div id="options" class="options"> 
+        <!--Options goes here-->
+    </div>
+    <button id="btnEdge"> Add Edge </button>
+
+    </aside>
+  
+    <!--inputs-->
+    <aside class="inputs">
+
+        <input id="nest" type="text" placeholder="Nest"/>
+        <input id="food" type="text" placeholder="Food"/>
+        <input id="Obstacles" type="text" placeholder="Obstacles"/>
+        <input id="numAnts" type="number" placeholder="Number of ants"/>
+        <input id="evapoRate" type="number" placeholder="Evaporation rate"/>
+        <input id="numTrials" type="number" placeholder="Number of Episode"/>
+    </aside>
+
+    <aside class="btns">
+        <button id="Visualize">Visualize</button>
+        <button id="bestPath">Best Path</button>
+    </aside>
+   </main>
+
+    <main id="graphic"> 
+
+   </main>
+
+    </section>
+
+<script type="module" src="./main.js"></script>
+<script type="module" src="./UI.js"></script>
+</body>
+</html>
